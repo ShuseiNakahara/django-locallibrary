@@ -28,11 +28,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-# Set hosts to allow any app on Railway and the local testing URL
-ALLOWED_HOSTS = ['.railway.app','127.0.0.1']
+# Set hosts to allow my own site and the local testing URL
+ALLOWED_HOSTS = ['http://os3-292-35659.vs.sakura.ne.jp','127.0.0.1']
 
 # Set CSRF trusted origins to allow any app on Railway and the local testing URL
-CSRF_TRUSTED_ORIGINS = ['https://*.railway.app','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['http://os3-292-35659.vs.sakura.ne.jp','https://*.127.0.0.1']
 
 
 # Application definition
